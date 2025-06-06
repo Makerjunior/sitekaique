@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alves Castro & Camargoh - Advocacia e Assessoria Jurídica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo/logo1.png" />
+ <!-- Open Graph Meta Tags (para miniatura em redes sociais) -->
+  <meta property="og:title" content="Alves Castro & Camargoh" />
+  <meta property="og:description" content="Advocacia e Assessoria Jurídica" />
+  <meta property="og:image" content="img/logo/logo1.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.seusite.com.br" />
+
+  <!-- Twitter Card (opcional para suporte estendido no X/Twitter) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alves Castro & Camargoh" />
+  <meta name="twitter:description" content="Advocacia e Assessoria Jurídica" />
+  <meta name="twitter:image" content="img/logo/logo1.png" />
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 navbar-glass">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br  rounded-lg flex items-center justify-center">
+                         <img src="img/logo/logo1.png" alt="">
+                    </div>
+                    <div class="text-white">
+                        <h1 class="text-lg font-bold font-playfair">Alves Castro & Camargoh</h1>
+                        <p class="text-xs text-gray-300">Advocacia e Assessoria Jurídica</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-white hover:text-yellow-400 transition-colors">Início</a>
+                    <a href="#servicos" class="text-white hover:text-yellow-400 transition-colors">Serviços</a>
+                    <a href="#equipe" class="text-white hover:text-yellow-400 transition-colors">Equipe</a>
+                    <a href="#contato" class="text-white hover:text-yellow-400 transition-colors">Contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5531980180541&text=Olá!%20Preciso%20falar%20com%20um%20Advogado.%20Pode%20me%20ajudar?" 
+                       target="_blank" 
+                       class="gradient-btn text-white px-6 py-2 rounded-full font-medium flex items-center gap-2 hover:scale-105 transition-transform">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed top-0 right-0 h-full w-80 bg-slate-900 shadow-2xl md:hidden" id="mobile-menu">
+            <div class="p-6">
+                <button class="text-white text-2xl mb-8 float-right" onclick="toggleMobileMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="clear-both space-y-6">
+                    <a href="#inicio" class="block text-white text-lg hover:text-yellow-400 transition-colors" onclick="toggleMobileMenu()">Início</a>
+                    <a href="#servicos" class="block text-white text-lg hover:text-yellow-400 transition-colors" onclick="toggleMobileMenu()">Serviços</a>
+                    <a href="#equipe" class="block text-white text-lg hover:text-yellow-400 transition-colors" onclick="toggleMobileMenu()">Equipe</a>
+                    <a href="#contato" class="block text-white text-lg hover:text-yellow-400 transition-colors" onclick="toggleMobileMenu()">Contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5531980180541&text=Olá!%20Preciso%20falar%20com%20um%20Advogado.%20Pode%20me%20ajudar?" 
+                       target="_blank" 
+                       class="gradient-btn text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 w-fit">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-white relative pt-20">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="fade-in">
+            <div class="inline-block p-2 rounded-full mb-6">
+              <div class=" p-4 rounded-full">
+               <img class="w-20 h-20" src="img/logo/logo1.png" alt="Logo">
+               </div>
+           </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 leading-tight">
+                    <span class="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+                        Alves Castro & Camargoh
+                    </span>
+                    <br>
+                    <span class="text-2xl md:text-3xl lg:text-4xl font-normal">
+                        Advocacia e Assessoria Jurídica
+                    </span>
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-4xl mx-auto text-gray-300 leading-relaxed">
+                    Mais de <span class="text-yellow-400 font-semibold">30 anos de experiência</span> oferecendo soluções jurídicas eficientes, pautadas na ética e no comprometimento com o cliente.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://api.whatsapp.com/send?phone=5531980180541&text=Olá!%20Preciso%20falar%20com%20um%20Advogado.%20Pode%20me%20ajudar?" 
+                       target="_blank" 
+                       class="gradient-btn text-white px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-3 hover:scale-105 transition-transform shadow-2xl">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        Consulta Gratuita
+                    </a>
+                    <a href="#servicos" 
+                       class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-slate-900 transition-all">
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-gray-800 mb-4">
+                    Como Podemos <span class="text-yellow-600">Te Ajudar</span>
+                </h2>
+                <div class="section-divider mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Oferecemos soluções jurídicas completas e personalizadas para suas necessidades
+                </p>
+            </div>
+            
+            <!-- Área Civil -->
+            <div class="mb-20 fade-in">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-slate-800 mb-4">
+                        <i class="fas fa-home service-icon mr-3"></i>
+                        ÁREA CIVIL
+                    </h3>
+                    <div class="w-20 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Ações Indenizatórias</h4>
+                        <p class="text-gray-600 leading-relaxed">Cobranças e execuções: Direito imobiliário, consumidor e contratos com total segurança jurídica.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-heart-broken"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Divórcio</h4>
+                        <p class="text-gray-600 leading-relaxed">Judicial e extrajudicial. Orientação completa para uma transição menos desgastante.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Pensão Alimentícia</h4>
+                        <p class="text-gray-600 leading-relaxed">Suporte completo em processos de pedido, revisão e exoneração de pensão alimentícia.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Guarda</h4>
+                        <p class="text-gray-600 leading-relaxed">Guarda compartilhada e regulamentação de visita, sempre priorizando o bem-estar do menor.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Partilha de Bens</h4>
+                        <p class="text-gray-600 leading-relaxed">Divisão justa e transparente dos bens adquiridos durante o relacionamento.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Inventários</h4>
+                        <p class="text-gray-600 leading-relaxed">Judiciais e extrajudiciais. Garantimos a legalidade na transferência dos bens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área Trabalhista -->
+            <div class="fade-in">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-slate-800 mb-4">
+                        <i class="fas fa-briefcase service-icon mr-3"></i>
+                        ÁREA TRABALHISTA
+                    </h3>
+                    <div class="w-20 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Advocacia Contenciosa</h4>
+                        <p class="text-gray-600 leading-relaxed">Defesa de direitos individuais e coletivos em processos judiciais trabalhistas.</p>
+                    </div>
+
+                    <div class="card-3d bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:border-yellow-400 transition-all">
+                        <div class="text-5xl mb-6 service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 text-gray-800">Consultoria e Compliance</h4>
+                        <p class="text-gray-600 leading-relaxed">Orientação empresarial para conformidade com a legislação trabalhista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-gray-800 mb-4">
+                    Nossa <span class="text-yellow-600">Equipe</span>
+                </h2>
+                <div class="section-divider mb-6"></div>
+                <p class="text-xl text-gray-600">
+                    Experiência, Profissionalismo e Competência ⚖️
+                </p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Kaique Ferraz Alves -->
+                <div class="team-card rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/3 p-8 lg:p-12 flex justify-center items-center bg-gradient-to-br from-yellow-50 to-yellow-100">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl transform rotate-6"></div>
+                                <img src="img/colab/kaiqueimg.jpg?height=350&width=280" alt="Kaique Ferraz Alves" class="relative rounded-2xl shadow-2xl w-full max-w-xs">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 p-8 lg:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user-tie text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-playfair font-bold text-slate-800">Kaique Ferraz Alves</h3>
+                            </div>
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    <strong class="text-slate-800">Formação:</strong> Direito pela Faculdade Pitágoras (2019)
+                                </p>
+                                <p>
+                                    <strong class="text-slate-800">Especialidades:</strong> Direito Cível e do Consumidor
+                                </p>
+                                <p>
+                                    Construiu uma carreira sólida atuando no renomado escritório Moura Advogados, onde desenvolveu habilidades técnicas e práticas essenciais para a advocacia. Teve passagem importante pela Defesa Civil Municipal de Belo Horizonte, aprofundando conhecimentos em Direitos Humanos.
+                                </p>
+                                <p>
+                                    Realizou especializações em Direito Ambiental e Comunicação Visual, complementando sua formação com uma visão estratégica na atuação profissional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cíntia de Souza Camargo -->
+                <div class="team-card rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <div class="flex flex-col lg:flex-row-reverse">
+                        <div class="lg:w-1/3 p-8 lg:p-12 flex justify-center items-center bg-gradient-to-br from-blue-50 to-blue-100">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl transform -rotate-6"></div>
+                                <img src="img/colab/cintiaimg.jpg?height=350&width=280" alt="Cíntia de Souza Camargo" class="relative rounded-2xl shadow-2xl w-full max-w-xs">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 p-8 lg:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-female text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-playfair font-bold text-slate-800">Cíntia de Souza Camargo</h3>
+                            </div>
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    <strong class="text-slate-800">Experiência:</strong> 4 anos de atuação
+                                </p>
+                                <p>
+                                    <strong class="text-slate-800">Formação:</strong> Direito pela Faculdade Dom Helder Câmara, Belo Horizonte/MG
+                                </p>
+                                <p>
+                                    <strong class="text-slate-800">Especialidades:</strong> Direito e Processo do Trabalho, Sucessões, Família
+                                </p>
+                                <p>
+                                    Pós-graduanda em Mediação de Conflitos, trazendo uma abordagem moderna e humanizada para a resolução de disputas. Membro ativa da Comissão de Direito e Processo do Trabalho da OAB/MG – Subseção Venda Nova.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aloisio Castro Dos Santos -->
+                <div class="team-card rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="lg:w-1/3 p-8 lg:p-12 flex justify-center items-center bg-gradient-to-br from-green-50 to-green-100">
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl transform rotate-6"></div>
+                                <img src="img/colab/aloisiopng.jpg?height=350&width=280" alt="Aloisio Castro Dos Santos" class="relative rounded-2xl shadow-2xl w-full max-w-xs">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 p-8 lg:p-12">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-playfair font-bold text-slate-800">Aloisio Castro Dos Santos</h3>
+                            </div>
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    <strong class="text-slate-800">Experiência:</strong> Mais de 40 anos de atuação
+                                </p>
+                                <p>
+                                    <strong class="text-slate-800">Formação:</strong> Graduado pela FADIVA (Varginha-MG)
+                                </p>
+                                <p>
+                                    <strong class="text-slate-800">Especialidades:</strong> Direito Trabalhista, Sucessões, Família, Contratos Comerciais, Juizado Especial Cível
+                                </p>
+                                <p>
+                                    Especialista em compliance e advocacia contenciosa, traz décadas de experiência e conhecimento profundo do sistema jurídico brasileiro. Sua vasta experiência é um diferencial fundamental para casos complexos e estratégicos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 fade-in">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-8">
+                Precisa de Ajuda Jurídica?
+            </h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto text-gray-300">
+                Entre em contato conosco e receba uma consulta personalizada com nossos especialistas
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=5531980180541&text=Olá!%20Preciso%20falar%20com%20um%20Advogado.%20Pode%20me%20ajudar?" 
+               target="_blank" 
+               class="gradient-btn text-white px-10 py-5 rounded-full font-bold text-xl inline-flex items-center gap-4 hover:scale-105 transition-transform shadow-2xl">
+                <i class="fab fa-whatsapp text-3xl"></i>
+                Consulta Gratuita Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-gray-800 mb-4">
+                    Entre em <span class="text-yellow-600">Contato</span>
+                </h2>
+                <div class="section-divider mb-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="bg-gradient-to-br from-slate-50 to-gray-100 p-8 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-8">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">Endereço</h4>
+                                    <p class="text-gray-600">Rua da Bahia, nº 1148, Sala 1507, 15º andar<br>Centro – Belo Horizonte/MG<br>CEP: 30160-906</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-whatsapp text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">WhatsApp</h4>
+                                    <p class="text-gray-600">(31) 98018-0541</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-800">E-mail</h4>
+                                    <p class="text-gray-600">contato@alvescastrocamargoh.com.br</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <div class="w-full h-96 rounded-3xl overflow-hidden shadow-xl">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.234567890123!2d-43.9376543210987!3d-19.9165432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU0JzU5LjYiUyA0M8KwNTYnMTUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-gradient-to-br  rounded-lg flex items-center justify-center">
+                         <img src="img/logo/logo1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold font-playfair">Alves Castro & Camargoh</h3>
+                        <p class="text-sm text-gray-400">Advocacia e Assessoria Jurídica</p>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        <strong>2024 © Todos os Direitos Reservados – Alves Castro & Camargoh Advocacia</strong><br>
+                        Atuamos exclusivamente com a prestação de serviços jurídicos | Não oferecemos serviços oficiais do governo | Não compartilhamos seus dados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/send?phone=5531980180541&text=Olá!%20Preciso%20falar%20com%20um%20Advogado.%20Pode%20me%20ajudar?" 
+       target="_blank" 
+       class="whatsapp-float bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-full shadow-2xl hover:from-green-500 hover:to-green-700 transition-all group">
+        <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+    </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
